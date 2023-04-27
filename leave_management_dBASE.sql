@@ -52,7 +52,6 @@ CREATE TABLE LEAVE_TYPE (
 CREATE TABLE LEAVE_REQUEST (
 	request_id SMALLINT AUTO_INCREMENT PRIMARY KEY,
     employee_id SMALLINT NOT NULL,
-    approval_manager_id SMALLINT,
     leave_type_id SMALLINT NOT NULL,
     start_datetime DATETIME,
     end_datetime DATETIME,
