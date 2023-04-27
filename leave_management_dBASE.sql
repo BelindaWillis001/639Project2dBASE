@@ -30,12 +30,10 @@ CREATE TABLE EMPLOYEE (
     position_id SMALLINT NOT NULL, 
     position_start_date DATE,
     department_id SMALLINT NOT NULL,
-    employee_role_id SMALLINT NOT NULL, 
-    reports_to_id SMALLINT NOT NULL, 
+    supervisor_id SMALLINT NOT NULL, 
     approval_manager_id SMALLINT NOT NULL,
     CONSTRAINT EMPLOYEE_position_id_FK FOREIGN KEY (position_id) REFERENCES POSITION (position_id),
-    CONSTRAINT EMPLOYEE_department_id_FK FOREIGN KEY (department_id) REFERENCES DEPARTMENT (department_id),
-    CONSTRAINT EMPLOYEE_ROLE_employee_role_id_FK FOREIGN KEY (employee_role_id) REFERENCES EMPLOYEE_ROLE (employee_role_id)
+    CONSTRAINT EMPLOYEE_department_id_FK FOREIGN KEY (department_id) REFERENCES DEPARTMENT (department_id)
 );
 
 CREATE TABLE EMPLOYEE_ROLE (
