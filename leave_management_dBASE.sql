@@ -56,6 +56,10 @@ CREATE TABLE LEAVE_REQUEST (
     start_datetime DATETIME,
     end_datetime DATETIME,
     status_approval TINYINT DEFAULT FALSE,
+    approval_manager_id SMALLINT NOT NULL,
+    reasons VARCHAR(255),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     CONSTRAINT LEAVE_REQUEST_employee_id_FK FOREIGN KEY (employee_id) REFERENCES EMPLOYEE (employee_id),
     CONSTRAINT LEAVE_REQUEST_leave_type_id_FK FOREIGN KEY (leave_type_id) REFERENCES LEAVE_TYPE (leave_type_id)
 );

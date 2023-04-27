@@ -24,8 +24,8 @@ INSERT INTO LEAVE_TYPE (leave_type)
 VALUES ('Annual Leave'), ('Sick Leave'), ('Bereavement Leave'), ('Public Holiday'), ('Unpaid Leave')
 ;
 
-INSERT INTO LEAVE_REQUEST (employee_id, leave_type_id, start_datetime, end_datetime, status_approval)
-VALUES (1, 1, '2023-08-01', '2023-08-20', 0), (2, 2, '2023-04-28', '2023-04-28', 1)
+INSERT INTO LEAVE_REQUEST (employee_id, leave_type_id, start_datetime, end_datetime, status_approval, approval_manager_id, reasons)
+VALUES (1, 1, '2023-08-01', '2023-08-20', 0, 2, 'too busy'), (2, 2, '2023-04-28', '2023-04-28', 1, 1, 'covid')
 ;
 
 INSERT INTO LEAVE_BALANCE (employee_id, leave_type_id, leave_balance)
