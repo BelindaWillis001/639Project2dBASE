@@ -19,3 +19,15 @@ VALUES ('Miss', 'Sherlyn', 'Duan', 'sherlyn.duan@lincolnuni.ac.nz', 'password', 
 INSERT INTO EMPLOYEE_ROLE (employee_id, role_id)
 VALUES (1,1), (2,1)
 ;
+
+INSERT INTO LEAVE_TYPE (leave_type)
+VALUES ('Annual Leave'), ('Sick Leave'), ('Bereavement Leave'), ('Public Holiday'), ('Unpaid Leave')
+;
+
+INSERT INTO LEAVE_REQUEST (employee_id, leave_type_id, start_datetime, end_datetime, status_approval)
+VALUES (1, 1, '2023-08-01', '2023-08-20', 0), (2, 2, '2023-04-28', '2023-04-28', 1)
+;
+
+INSERT INTO LEAVE_BALANCE (employee_id, leave_type_id, leave_balance)
+VALUES (1, 1, 500), (1, 2, 40), (2, 1, -10), (2, 2, 40)
+;
