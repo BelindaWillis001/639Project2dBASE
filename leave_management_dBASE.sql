@@ -67,12 +67,11 @@ CREATE TABLE LEAVE_REQUEST (
 CREATE TABLE LEAVE_BALANCE (
 	leave_balance_id SMALLINT AUTO_INCREMENT PRIMARY KEY, 
     employee_id SMALLINT NOT NULL,
-    leave_type_id SMALLINT NOT NULL, 
-    leave_balance INT NOT NULL,
+    annual_leave_balance INT, 
+    sick_leave_balance INT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
 	updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-    CONSTRAINT LEAVE_BALANCE_employee_id_FK FOREIGN KEY (employee_id) REFERENCES EMPLOYEE (employee_id),
-    CONSTRAINT LEAVE_BALANCE_leave_type_id_FK FOREIGN KEY (leave_type_id) REFERENCES LEAVE_TYPE (leave_type_id)
+    CONSTRAINT LEAVE_BALANCE_employee_id_FK FOREIGN KEY (employee_id) REFERENCES EMPLOYEE (employee_id)
 );
     
     
