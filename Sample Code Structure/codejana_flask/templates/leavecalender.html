@@ -141,7 +141,7 @@
 
 <body>
  
-<h1>Leave Calendar</h1>
+<h1>My Leave Calendar</h1>
 <ul class="key" id="chartkey">
   <li class="pending-holiday"><a href="#/" data-target="pending-holiday">Pending Holiday</a></li>
   <li class="approved-holiday"><a href="#/" data-target="approved-holiday">Approved Holiday</a></li>
@@ -178,7 +178,7 @@ body {
 
 h1 {
   font-family: "Ubuntu";
-  color: #e51400 !important;
+  color: #3333FF !important;
   font-weight: 500;
 }
 
@@ -206,7 +206,7 @@ h1 {
   background: rgba(229, 20, 0, 0.1);
 }
 .key .today {
-  outline: solid 2px #e51400;
+  outline: solid 2px #3333ff;
 }
 
 @media (min-width: 568px) {
@@ -234,11 +234,11 @@ h1 {
 .leaveCalendar div.month {
   padding-top: 1rem;
   margin-top: 1rem;
-  border-top: dashed 1px #e51400;
+  border-top: dashed 1px #3333FF;
 }
 .leaveCalendar span.months {
   font-size: 1rem;
-  color: #e51400;
+  color: #3333FF;
   display: block;
   margin-bottom: 1rem;
 }
@@ -323,7 +323,7 @@ h1 {
   cursor: pointer;
   font-weight: bold;
   transform: scale(1.2);
-  background: #e51400;
+  background: #3333FF;
   border-radius: 3px;
   color: #fff;
 }
@@ -333,11 +333,11 @@ h1 {
   color: rgba(0, 0, 0, 0.5);
 }
 .today {
-  border: solid 2px #e51400;
+  border: solid 2px #3333FF;
 }
 .key .pending-holiday,
 .leaveCalendar .pending-holiday {
-  background: linear-gradient(45deg, #ff5c4c 25%, #e51400 25%, #e51400 50%, #ff5c4c 50%, #ff5c4c 75%, #e51400 75%, #e51400);
+  background: linear-gradient(45deg, #6666FF 25%, #3333FF 25%, #3333FF 50%, #6666FF 50%, #6666FF 75%, #3333FF 75%, #3333FF);
   color: #fff;
   animation: progress 1s linear infinite;
   background-size: 30px 30px;
@@ -345,7 +345,7 @@ h1 {
 }
 .key .approved-holiday,
 .leaveCalendar .approved-holiday {
-  background-color: #e51400;
+  background-color: #3333FF;
   color: #fff;
 }
 .key .declined-holiday,
@@ -365,7 +365,7 @@ h1 {
 }
 .key .pending-other,
 .leaveCalendar .pending-other {
-  background: linear-gradient(45deg, #f4002a 25%, #ff5b77 25%, #ff5b77 50%, #f4002a 50%, #f4002a 75%, #ff5b77 75%, #ff5b77);
+  background: linear-gradient(45deg, #0000FF 25%, #6666FF 25%, #6666FF 50%, #0000FF 50%, #0000FF 75%, #6666FF 75%, #6666FF);
   color: #fff;
   animation: progress 1s linear infinite;
   background-size: 30px 30px;
@@ -373,7 +373,7 @@ h1 {
 }
 .key .approved-other,
 .leaveCalendar .approved-other {
-  background-color: #ff5b77;
+  background-color: #6666FF;
 }
 .key .declined-other,
 .leaveCalendar .declined-other {
