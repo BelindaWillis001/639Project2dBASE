@@ -25,7 +25,7 @@ CREATE TABLE EMPLOYEE (
     employee_fname VARCHAR(20) NOT NULL,
     employee_lname VARCHAR(20) NOT NULL,
     employee_email VARCHAR(100) NOT NULL,
-    employee_password VARCHAR(20) NOT NULL,
+    employee_password VARCHAR(255) NOT NULL,
     date_joined DATE,
     position_id SMALLINT NOT NULL, 
     position_start_date DATE,
